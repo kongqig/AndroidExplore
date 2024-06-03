@@ -1,6 +1,9 @@
 package com.kongqikill.kongqikillexplore;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,9 +12,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.kongqikill.kongqikillexplore.databinding.ActivityMainBinding;
-public class MainActivity extends AppCompatActivity {
+import com.kongqikill.kongqikillexplore.views.TextviewActivity;
 
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    // 声明变量
     private ActivityMainBinding binding;
+    private Button button_textview;
+
     // 窗口被创建
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,16 +27,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
-        binding =ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         //setContentView(R.layout.activity_main);
         // 创建完毕。。。
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_root), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        initview();
+    }
+
+    private void initview() {
+        //初始化视图
+        button_textview = binding.mainExploreTextvewi;
+        //视图事件
+        button_textview.setOnClickListener(this);
     }
 
     // 窗口被启动
@@ -66,5 +83,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         binding = null;
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        if (view == button_textview) {
+            startActivity(new Intent(MainActivity.this, TextviewActivity.class));
+        }
     }
 }

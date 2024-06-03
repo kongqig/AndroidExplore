@@ -1,0 +1,39 @@
+根目录
+.gradle                         IDE文件目录
+.idea                           IDE文件目录
+app                             软件包模块目录
+gradle                          构建器目录
+.gitignore                      版本控制排除项记录文件
+build.gradle                    项目全局构建脚本
+gradle.properties               gradle全局配置文件
+gradlew                         gradle命令执行文件(MacOS、Linux)
+gradlew.bat                     gradle命令执行文件(Windows)
+local.properties                sdk路径设置文件
+settings.gradle                 项目全局管理文件
+
+app
+build                           IDE文件目录
+build\outputs\apk\debug\        安装包生成目录(测试包)
+build\outputs\apk\release\      安装包生成目录(发行包)
+libs                            第三方库存储目录
+src                             app模块源文件目录
+.gitignore                      版本控制排除项记录文件(app模块)
+build.gradle                    构建脚本(app模块)
+proguard-rules.pro              指定项目代码混淆规则文件
+
+src
+androidTest                     测试用例目录
+main                            主要目录
+test                            单元测试目录
+
+main
+java                            java代码目录
+res                             资源文件目录
+AndroidManifest.xml             清单文件
+
+res
+drawable                        图片文件目录
+layout                          布局文件目录
+mipmap                          应用图标文件目录
+values                          国际化文件目录
+xml                             xml文件目录

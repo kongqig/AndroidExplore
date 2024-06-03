@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textview_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".views.TextviewActivity">
+
+    <TextView
+        android:id="@+id/textView_textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--layout_width(设置视图宽度)-->
+            <!--match_parent(最大)-->
+            <!--wrap_content(自适应)-->
+            <!--也可以直接写数值，如：20dp，58dp-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_bright"
+                android:text="layout_width(设置视图宽度)" />
+
+            <!--layout_height(设置视图高度)-->
+            <!--match_parent(最大)-->
+            <!--wrap_content(自适应)-->
+            <!--也可以直接写数值，如：20dp，58dp-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@android:color/holo_green_dark"
+                android:text="layout_height(设置视图高度)" />
+
+            <!--id(为其设置一个id，用于在代码中操纵)-->
+            <TextView
+                android:id="@+id/textView_textview_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <!--textColor(设置字体颜色)-->
+            <!--也可以直接写数值，如：#FF8800，FF9E0C8A-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="textColor(设置字体颜色)"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <!--textStyle(设置字体样式)-->
+            <!--normal(无效果)-->
+            <!--bold(粗体)-->
+            <!--italic(斜体)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="textStyle(设置字体样式)"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:text="无效果" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textStyle="bold"
+                    android:text="粗体" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="斜体" />
+            </LinearLayout>
+
+            <!--textSize(设置字体大小)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="textSize(设置字体大小)" />
+
+            <!--设background(置视图背景)-->
+            <!--也可以直接写数值，如：#FF8800，@drawable/ic_launcher_background-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:text="设background(置视图背景)" />
+
+            <!--gravity(设置视图内容对齐方式)-->
+            <!--center(居中)-->
+            <!--left(居左)-->
+            <!--right（居右）-->
+            <!--start(开头)-->
+            <!--end(结尾)-->
+            <!--center_horizontal(横向居中)-->
+            <!--center_vertical(纵向居中)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="gravity(设置视图内容对齐方式)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
