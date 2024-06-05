@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.kongqikill.kongqikillexplore.databinding.ActivityMainBinding;
-import com.kongqikill.kongqikillexplore.views.TextviewActivity;
+import com.kongqikill.kongqikillexplore.views.textviewc.TextviewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

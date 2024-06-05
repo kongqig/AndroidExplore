@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".views.TextviewActivity">
+    tools:context=".views.textviewc.TextviewActivity">
 
     <TextView
         android:id="@+id/textView_textview1"
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="TextView"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -100,7 +100,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:text="textSize(设置字体大小)" />
 
             <!--设background(置视图背景)-->
@@ -126,10 +126,190 @@
                 android:text="gravity(设置视图内容对齐方式)" />
 
             <TextView
+                android:id="@+id/textView_textview_test1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:text="带阴影的TextView" />
+
+            <!--shadowRadius(设置阴影模糊度)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:shadowRadius="3"
+                android:shadowColor="@android:color/holo_blue_bright"
+                android:text="shadowRadius(设置阴影模糊度)" />
+
+            <!--shadowColor(设置阴影颜色)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:shadowRadius="35"
+                android:shadowColor="@android:color/holo_blue_bright"
+                android:text="shadowColor(设置阴影颜色)" />
+
+            <!--shadowDx(设置阴影水平偏移)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:shadowRadius="10"
+                android:shadowColor="@android:color/holo_blue_bright"
+                android:shadowDx="60"
+                android:text="shadowDx(设置阴影水平偏移)" />
+
+            <!--shadowDy(设置阴影垂直偏移)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:shadowRadius="10"
+                android:shadowColor="@android:color/holo_blue_bright"
+                android:shadowDy="20"
+                android:text="shadowDy(设置阴影垂直偏移)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="TextView" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:text="带跑马灯效果的TextView" />
+
+            <!--singleLine(设置单行显示)-->
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:text="singleLine(设置单行显示).singleLine(设置单行显示)" />
+
+            <!--focusable(设置是否可获取焦点)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="true"
+                android:text="focusable(设置是否可获取焦点)" />
+
+            <!--focusableInTouchMode(设置视图在触摸模式下是否可聚焦)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusableInTouchMode="true"
+                android:text="focusableInTouchMode(设置视图在触摸模式下是否可聚焦)" />
+
+            <!--ellipsize(设置文本省略)-->
+            <!--end(结尾)-->
+            <!--start(开头)-->
+            <!--marquee（字幕动画）-->
+            <!--middle(中间)-->
+            <!--none(无)-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ellipsize(设置文本省略)" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="123456789" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:ellipsize="start"
+                    android:text="123456789" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:ellipsize="marquee"
+                    android:text="123456789" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:ellipsize="middle"
+                    android:text="123456789" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    android:text="123456789" />
+            </LinearLayout>
+
+            <!--marqueeRepeatLimit(设置字幕动画重复次数)-->
+            <!--marquee_forever(无限循环)-->
+            <!--也可以直接写数值，如：10，600-->
+            <!--clickable(是否可点击)-->
+            <!--&quot;(")-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:ellipsize="marquee"
+                android:clickable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="marqueeRepeatLimit(设置字幕动画重复次数),需要点击一下，让它获取焦点才能滚动，没有android:clickable=&quot;true&quot;默认情况下无法点击"/>
+
+            <!--自定义TextView——自动获取焦点的文本视图-->
+            <com.kongqikill.kongqikillexplore.views.textviewc.MarqueeTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:ellipsize="marquee"
+                android:clickable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="marqueeRepeatLimit(设置字幕动画重复次数),不需要点击，进入此窗口后会自动获取焦点"/>
+
+            <!--<requestFocus/>——自动获取焦点-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:ellipsize="marquee"
+                android:clickable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="marqueeRepeatLimit(设置字幕动画重复次数),不需要点击，进入此窗口后会自动获取焦点">
+                <requestFocus/>
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
         </LinearLayout>
     </ScrollView>
 

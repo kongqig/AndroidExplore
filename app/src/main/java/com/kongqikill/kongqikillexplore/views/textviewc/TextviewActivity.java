@@ -1,6 +1,8 @@
-package com.kongqikill.kongqikillexplore.views;
+package com.kongqikill.kongqikillexplore.views.textviewc;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -32,9 +34,25 @@ public class TextviewActivity extends AppCompatActivity {
 
         // textViewTextviewId 用代码设置内容
         // R.layout.activity_textview  49行
-
         //TextView textView_id = findViewById(R.id.textView_textview_id);       // findViewById
         TextView textView_id = binding.textViewTextviewId;                      // binding
         textView_id.setText("id(为其设置一个id，用于在代码中操纵)");                 // 设置文本视图内容
+
+
+        // 获取对象
+        TextView textView_test1 = binding.textViewTextviewTest1;
+        // 设置文本内容
+        textView_test1.setText("用代码设置的内容");// 或 textView_test1.setText(R.string.app_name);
+        // 设置文本颜色
+        textView_test1.setTextColor(0xFF35D811);// 或 textView_test1.setTextColor(R.color.black);
+        // 设置文本样式
+        // 设置文本大小
+        textView_test1.setTextSize(20);
+        // 设置文本背景
+        textView_test1.setBackground(getDrawable(R.drawable.ic_launcher_background));
+        // 设置文本背景颜色
+        textView_test1.setBackgroundColor(0xFF35D811);
+        // 设置文本对齐方式
+        textView_test1.setGravity(Gravity.CENTER);
     }
 }
