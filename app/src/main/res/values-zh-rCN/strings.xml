@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">KongqikillExplore</string>
     <string name="main_text_textview">TextView(文本视图)</string>
+    <string name="main_text_button">TextView(按钮)</string>
 </resources>
