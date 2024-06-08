@@ -2,5 +2,6 @@
 <resources>
     <string name="app_name">KongqikillExplore</string>
     <string name="main_text_textview">TextView(TextView)</string>
-    <string name="main_text_button">TextView(Button)</string>
+    <string name="main_text_button">Button(Button)</string>
+    <string name="main_text_edittext" >EditText(EditText)</string>
 </resources>

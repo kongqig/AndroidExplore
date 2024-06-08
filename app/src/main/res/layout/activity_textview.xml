@@ -20,6 +20,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,7 +70,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="textStyle(设置字体样式)"/>
+                android:text="textStyle(设置字体样式)" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,29 +81,29 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="normal"
-                    android:text="无效果" />
+                    android:text="无效果"
+                    android:textStyle="normal" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
-                    android:textStyle="bold"
-                    android:text="粗体" />
+                    android:text="粗体"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="italic"
-                    android:text="斜体" />
+                    android:text="斜体"
+                    android:textStyle="italic" />
             </LinearLayout>
 
             <!--textSize(设置字体大小)-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="textSize(设置字体大小)" />
+                android:text="textSize(设置字体大小)"
+                android:textSize="30sp" />
 
             <!--设background(置视图背景)-->
             <!--也可以直接写数值，如：#FF8800，@drawable/ic_launcher_background-->
@@ -135,43 +137,43 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_margin="10dp"
-                android:textSize="20sp"
-                android:text="带阴影的TextView" />
+                android:gravity="center"
+                android:text="带阴影的TextView"
+                android:textSize="20sp" />
 
             <!--shadowRadius(设置阴影模糊度)-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:shadowRadius="3"
                 android:shadowColor="@android:color/holo_blue_bright"
+                android:shadowRadius="3"
                 android:text="shadowRadius(设置阴影模糊度)" />
 
             <!--shadowColor(设置阴影颜色)-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:shadowRadius="35"
                 android:shadowColor="@android:color/holo_blue_bright"
+                android:shadowRadius="35"
                 android:text="shadowColor(设置阴影颜色)" />
 
             <!--shadowDx(设置阴影水平偏移)-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:shadowRadius="10"
                 android:shadowColor="@android:color/holo_blue_bright"
                 android:shadowDx="60"
+                android:shadowRadius="10"
                 android:text="shadowDx(设置阴影水平偏移)" />
 
             <!--shadowDy(设置阴影垂直偏移)-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:shadowRadius="10"
                 android:shadowColor="@android:color/holo_blue_bright"
                 android:shadowDy="20"
+                android:shadowRadius="10"
                 android:text="shadowDy(设置阴影垂直偏移)" />
 
             <TextView
@@ -183,10 +185,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_margin="10dp"
-                android:textSize="20sp"
-                android:text="带跑马灯效果的TextView" />
+                android:gravity="center"
+                android:text="带跑马灯效果的TextView"
+                android:textSize="20sp" />
 
             <!--singleLine(设置单行显示)-->
             <TextView
@@ -219,6 +221,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="ellipsize(设置文本省略)" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -228,38 +231,38 @@
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:singleLine="true"
                     android:ellipsize="end"
+                    android:singleLine="true"
                     android:text="123456789" />
 
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:singleLine="true"
                     android:ellipsize="start"
+                    android:singleLine="true"
                     android:text="123456789" />
 
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:singleLine="true"
+                    android:ellipsize="marquee"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
-                    android:ellipsize="marquee"
+                    android:singleLine="true"
                     android:text="123456789" />
 
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:singleLine="true"
                     android:ellipsize="middle"
+                    android:singleLine="true"
                     android:text="123456789" />
 
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:singleLine="true"
                     android:ellipsize="none"
+                    android:singleLine="true"
                     android:text="123456789" />
             </LinearLayout>
 
@@ -271,38 +274,39 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:singleLine="true"
+                android:clickable="true"
+                android:ellipsize="marquee"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:ellipsize="marquee"
-                android:clickable="true"
                 android:marqueeRepeatLimit="marquee_forever"
-                android:text="marqueeRepeatLimit(设置字幕动画重复次数),需要点击一下，让它获取焦点才能滚动，没有android:clickable=&quot;true&quot;默认情况下无法点击"/>
+                android:singleLine="true"
+                android:text="marqueeRepeatLimit(设置字幕动画重复次数),需要点击一下，让它获取焦点才能滚动，没有android:clickable=&quot;true&quot;默认情况下无法点击" />
 
             <!--自定义TextView——自动获取焦点的文本视图-->
             <com.kongqikill.kongqikillexplore.views.textviewc.MarqueeTextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:singleLine="true"
+                android:clickable="true"
+                android:ellipsize="marquee"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:ellipsize="marquee"
-                android:clickable="true"
                 android:marqueeRepeatLimit="marquee_forever"
-                android:text="marqueeRepeatLimit(设置字幕动画重复次数),不需要点击，进入此窗口后会自动获取焦点"/>
+                android:singleLine="true"
+                android:text="marqueeRepeatLimit(设置字幕动画重复次数),不需要点击，进入此窗口后会自动获取焦点" />
 
             <!--<requestFocus/>——自动获取焦点-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:singleLine="true"
+                android:clickable="true"
+                android:ellipsize="marquee"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:ellipsize="marquee"
-                android:clickable="true"
                 android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
                 android:text="marqueeRepeatLimit(设置字幕动画重复次数),不需要点击，进入此窗口后会自动获取焦点">
-                <requestFocus/>
+
+                <requestFocus />
             </TextView>
 
             <TextView

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--被点击显示的图片(一定要放在默认显示的图片的上面，否则点击后图标不会变)-->
+    <item android:drawable="@drawable/baseline_add_box_24" android:state_pressed="true"/>
+    <!--默认显示的图片-->
+    <item android:drawable="@drawable/baseline_add_24"/>
+
+</selector>

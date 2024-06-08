@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edittext_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".views.edittextc.EdittextActivity">
+
+    <TextView
+        android:id="@+id/edittext_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="EditText"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:orientation="vertical" >
+
+            <!--hint(设置输入提示)-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hint(设置输入提示)"/>
+
+            <!--textColorHint(设置输入提示文本颜色)-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="textColorHint(设置输入提示文本颜色)"
+                android:textColorHint="@color/blue"/>
+
+            <!--inputType(设置输入类型)-->
+            <!--number(数字)-->
+            <!--phone(电话)-->
+            <!--text(文本)-->
+            <!--textPassword(密码)-->
+            <!--numberPassword(数字密码)-->
+            <!--time(时间)-->
+            <!--date(数据)-->
+            <!--......-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="inputType(设置输入类型)"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:hint="时间"/>
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="数字"/>
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="密码"/>
+            </LinearLayout>
+
+            <!--drawablexxx(输入框指定方位添加图片)-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/baseline_add_24" />
+
+            <!--drawablePadding(设置图片内间距)-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_add_box_24"
+                android:drawablePadding="50dp"
+                android:text="drawablePadding(设置图片内间距)"/>
+
+            <!--padding(设置内间距)-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="35dp"
+                android:text="padding(设置内间距)"/>
+
+            <!--background(设置背景)-->
+            <!--图片、颜色皆可-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow"
+                android:text="background(设置背景)"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="get和set内容"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edittext_edittext_eta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="a"/>
+
+            <EditText
+                android:id="@+id/edittext_edittext_etb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="b"/>
+
+            <Button
+                android:id="@+id/edittext_button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="将a内容写入b"/>
+
+            <Button
+                android:id="@+id/edittext_button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="将b内容写入a"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

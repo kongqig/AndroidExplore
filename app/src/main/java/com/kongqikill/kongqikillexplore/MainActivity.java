@@ -12,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.kongqikill.kongqikillexplore.databinding.ActivityMainBinding;
+import com.kongqikill.kongqikillexplore.views.buttonc.ButtonActivity;
+import com.kongqikill.kongqikillexplore.views.edittextc.EdittextActivity;
 import com.kongqikill.kongqikillexplore.views.textviewc.TextviewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // 声明变量
     private ActivityMainBinding binding;
     private Button button_textview;
+    private Button button_button;
+    private Button button_edittext;
 
     // 窗口被创建
     @Override
@@ -44,8 +48,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initview() {
         //初始化视图
         button_textview = binding.mainExploreTextvewi;
+        button_button = binding.mainExploreButton1;
+        button_edittext = binding.mainExploreEdittext1;
         //视图事件
         button_textview.setOnClickListener(this);
+        button_button.setOnClickListener(this);
+        button_edittext.setOnClickListener(this);
     }
 
     // 窗口被启动
@@ -90,6 +98,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view == button_textview) {
             startActivity(new Intent(MainActivity.this, TextviewActivity.class));
+        }
+        if (view == button_button) {
+            startActivity(new Intent(MainActivity.this, ButtonActivity.class));
+        }
+        if (view == button_edittext) {
+            startActivity(new Intent(MainActivity.this, EdittextActivity.class));
         }
     }
 }
